@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+<head>
+<link rel="stylesheet" href="cal-heatmap.css" type="text/css">
+<script type='text/javascript' src='d3.min.js'></script>
+<script type='text/javascript' src='cal-heatmap.min.js'></script>
+
+
+<title>A blank HTML5 page</title>
+<meta charset="utf-8" />
+</head>
+<body>
+	<center>
+	<h1>My  Report</h1>
+	<div id="cal-heatmap"></div>
+<script type="text/javascript">
+	var cal = new CalHeatMap();
+cal.init({
+	domain: "month",
+	subDomain: "x_day",
+	start: new Date(2014, 7, 12),
+	cellSize: 30,
+	cellPadding: 5,
+	domainGutter: 20,
+	range: 1,
+	domainDynamicDimension: false,
+	subDomainTextFormat: "%d",
+
+	legend: [20, 40, 60, 80]
+});
+</script>
+
+
+</body>
+
+</html>
