@@ -19,7 +19,7 @@
 cal.init({
 	domain: "month",
 	subDomain: "x_day",
-	data: "data.jsosn",
+	data: "data.json",
 	cellSize: 30,
 	cellPadding: 5,
 	domainGutter: 40,
